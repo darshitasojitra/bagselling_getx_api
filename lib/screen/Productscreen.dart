@@ -17,10 +17,11 @@ class ProductScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     controller.fetchProduct(subid);
     return Scaffold(
-      appBar: AppBar(title: Text('Products'),
+      appBar: AppBar(title: Text('Products',style: TextStyle(color: Colors.white),),
+        backgroundColor: Colors.indigo,
         actions: [
           IconButton(
-            icon: Icon(Icons.shopping_cart),
+            icon: Icon(Icons.shopping_cart,color: Colors.white,),
             onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder: (_) => CartScreen()));
             },
@@ -30,7 +31,7 @@ class ProductScreen extends StatelessWidget {
           if (controller.isloading.value) {
             return Center(child: CircularProgressIndicator());
           } else if (controller.product.isEmpty) {
-            return Center(child: Text("No products found"));
+            return Center(child: Text("No productss found"));
           } else {
             return GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

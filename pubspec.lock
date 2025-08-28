@@ -41,6 +41,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
+  carousel_slider:
+    dependency: "direct main"
+    description:
+      name: carousel_slider
+      sha256: bcc61735345c9ab5cb81073896579e735f81e35fd588907a393143ea986be8ff
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.1.1"
   characters:
     dependency: transitive
     description:
@@ -145,7 +153,7 @@ packages:
     source: sdk
     version: "0.0.0"
   fluttertoast:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: fluttertoast
       sha256: "25e51620424d92d3db3832464774a6143b5053f15e382d8ffbfd40b6e795dcf1"
@@ -453,14 +461,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.4.0"
-  upi_india:
-    dependency: "direct main"
-    description:
-      name: upi_india
-      sha256: "483f1425ee8f0897397861b107e50b3aa195fec71215f86e906b625e841e90dd"
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.0.1"
   uuid:
     dependency: transitive
     description:

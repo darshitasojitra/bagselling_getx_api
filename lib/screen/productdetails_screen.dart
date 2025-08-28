@@ -64,10 +64,12 @@ class _ProductdetailsscreenState extends State<Productdetailsscreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("productDetails"),
+        title: Text("productDetails",style: TextStyle(color: Colors.white),),
+        backgroundColor: Colors.indigo,
         actions: [
           IconButton(
-            icon: Icon(Icons.shopping_cart),
+            icon: Icon(Icons.shopping_cart,
+            color: Colors.white,),
             onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder: (_) => CartScreen()));
             },
